@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>Eigentümer</title>
+  </head>
+  <body>
+    <div th:each="e:${eigentuemer}">
+      <p th:text="${e.vorname} ${e.nachname}"></p>
+      <p th:text="${e.adresse}, ${e.stadt}"></p>
+      <p th:text="${e.telefon}"></p>
+      <ul>
+        <li th:each="h:${e.haustiere}" th:text="${h.name}"></li>
+      </ul>
+    </div>
+  </body>
+</html>

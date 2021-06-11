@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8">
+    <title>Tierärzte</title>
+  </head>
+  <body>
+    <h2>Tierärzte</h2>
+    <div th:each="t:${tieraerzte}">
+      <p th:text="${t.vorname} ${t.nachname}"></p>
+      <div th:each="s:${t.spezialisierungen}">
+        <p th:text="${s.name}"></p>
+      </div>
+      <hr>
+    </div>
+  </body>
+</html>
