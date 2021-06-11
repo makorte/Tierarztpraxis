@@ -51,4 +51,6 @@ public class Besuch extends BaseEntity {
                 ", haustier=" + haustier +
                 '}';
     }
+
+
 }

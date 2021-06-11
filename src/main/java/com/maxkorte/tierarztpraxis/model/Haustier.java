@@ -45,11 +45,11 @@ public class Haustier extends BaseEntity {
         this.eigentuemer = eigentuemer;
     }
 
-    public Set<Besuche> getBesuche() {
+    public Set<Besuch> getBesuche() {
         return besuche;
     }
 
-    public void setBesuche(Set<Besuche> besuche) {
+    public void setBesuche(Set<Besuch> besuche) {
         this.besuche = besuche;
     }
 
